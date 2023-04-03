@@ -191,8 +191,11 @@ describe('Diploma DAO Project', async function () {
       const values = [0];
       // store ipfs link in contract
       const calldata = [
-        ethers.utils.defaultAbiCoder.encode(['string'], [ipfsLink]),
+        markingTokenContract.interface.encodeFunctionData(`mint`, [student2, ethers.utils.parseEther("3")]),
       ];
+      // const calldata = [
+      //   ethers.utils.defaultAbiCoder.encode(['string'], [ipfsLink]),
+      // ];
       // display decoded value
       const decode = ethers.utils.defaultAbiCoder.decode(
         ['string'],
