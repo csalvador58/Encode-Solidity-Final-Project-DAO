@@ -1,16 +1,15 @@
-import styles from "../styles/InstructionsComponent.module.css";
+import styles from "../styles/MyProject.module.css";
 import Router, { useRouter } from "next/router";
-export default function InstructionsComponent() {
+export default function MyProject() {
 	const router = useRouter();
 	return (
 		<div className={styles.container}>
 			<header className={styles.header_container}>
 				<h1>
-					create<span>-web3-dapp</span>
+					<span>My Project</span>
 				</h1>
 				<p>
-					Get started by editing this page in{" "}
-					<span>/pages/index.js</span>
+					Connect wallet to get started.
 				</p>
 			</header>
 
@@ -46,34 +45,6 @@ export default function InstructionsComponent() {
 						<p>Visit Docs</p>
 					</div>
 				</a>
-			</div>
-			<div className={styles.footer}>
-				<a href="https://alchemy.com/?a=create-web3-dapp" target={"_blank"}>
-					<img
-						id="badge-button"
-						style={{ width: "240px", height: "53px" }}
-						src="https://static.alchemyapi.io/images/marketing/badgeLight.png"
-						alt="Alchemy Supercharged"
-					/>
-				</a>
-				<div className={styles.icons_container}>
-					<div>
-						<a
-							href="https://github.com/alchemyplatform/create-web3-dapp"
-							target={"_blank"}
-						>
-							Leave a star on Github
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://twitter.com/AlchemyPlatform"
-							target={"_blank"}
-						>
-							Follow us on Twitter
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	);
