@@ -3,8 +3,9 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, useAccount, WagmiConfig } from "wagmi";
 import { sepolia } from "wagmi/chains";
-import { infuraProvider } from 'wagmi/providers/infura';
+import { infuraProvider } from "wagmi/providers/infura";
 import MainLayout from "../layout/mainLayout";
+import AppProvider from "../components/store/AppProvider";
 import { useRouter } from "next/router";
 
 const { chains, provider } = configureChains(
@@ -26,7 +27,7 @@ const wagmiClient = createClient({
 export { WagmiConfig, RainbowKitProvider };
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+  const router = useRouter();
   const account = useAccount({
     onConnect({ address, connector, isReconnected }) {
       if (!isReconnected) router.reload();
@@ -34,12 +35,12 @@ function MyApp({ Component, pageProps }) {
   });
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider
-        chains={chains}
-      >
-        <MainLayout>
-          <Component {...pageProps} />
-        </MainLayout>
+      <RainbowKitProvider chains={chains}>
+        <AppProvider>
+          <MainLayout>
+            <Component {...pageProps} />
+          </MainLayout>
+        </AppProvider>
       </RainbowKitProvider>
     </WagmiConfig>
   );
