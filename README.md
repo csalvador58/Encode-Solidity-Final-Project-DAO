@@ -150,23 +150,21 @@ Project was built and tested against:
 * **Ensure dotenv is setup with team 4 keys/signers** 
 
 #### Smart Contracts
-1. From the repo root run ``npm install``
+1. From the repo root run ``yarn install``
 2. Once install is complete:
 	 * To **compile** the contract(s) run: 
-	 ``npx hardhat compile``
+	 ``yarn hardhat compile``
 	 * To **test** the contract(s) run: 
-	 ``npx hardhat --network hardhat test``
+	 ``yarn hardhat --network hardhat test``
 	 * To **run** contracts run: 
-	 ``npx hardhat --network hardhat run scripts/gov_v2.ts``
+	 ``yarn hardhat --network hardhat run scripts/gov_v2.ts``
 
 #### API Backend:
  - Cd to the **backend** directory.
- - Run ``npm install``
+ - Run ``yarn install``
  - Once install is complete:
 	 * To start in **dev** the run: 
-	 ``npm run start``
-	 * To run in **watch** mode run:
-	 ``npm run start:dev``
+	 ``yarn start``
 - Swagger API will be accessible via http://localhost:3001/api
 	
 #### **Frontend:**
