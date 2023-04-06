@@ -146,6 +146,7 @@ UI design/wireframes desgins are available from UI design/wireframes desgins are
 Project was built and tested against:
 * Node v19.7.0
 * Npm v9.5.0
+* Yarn v3.5.0
 
 * **Ensure dotenv is setup with team 4 keys/signers** 
 
