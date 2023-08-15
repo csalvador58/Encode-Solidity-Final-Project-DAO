@@ -1,7 +1,5 @@
 # DiplomaGuild
 
-![Demo of login, project submittal, voting, and diploma NFT minting.](DiplomaDaoApp.gif)
-  
 
 ## Project Description
 
@@ -10,6 +8,8 @@ A [Peer Assessment](https://en.wikipedia.org/wiki/Peer_assessment) DAO where stu
 The DAO is made of students studying the same subject/course where they will all eventually submit their work for review/marking. On submission, their work will be assessed by other students against a set criteria (provided by the teaching organisation).
 
 In order to be awarded their diploma, a project will require a "pass" from a % of the DAO and on passing a student will be awarded their diploma certificate.
+
+![Demo of login, project submittal, voting, and diploma NFT minting.](assests/DiplomaDaoApp.gif)
 
 ## Design Details
 
