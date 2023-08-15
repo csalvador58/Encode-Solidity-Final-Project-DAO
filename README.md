@@ -1,5 +1,6 @@
 # DiplomaGuild
 
+![Demo of login, project submittal, voting, and diploma NFT minting.](DiplomaDaoApp.gif)
   
 
 ## Project Description
